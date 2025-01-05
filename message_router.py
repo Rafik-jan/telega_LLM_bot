@@ -19,7 +19,7 @@ async def handle_message(message: Message):
     # Если пользователь впервые обращается к боту
     if user_id not in user_states:
         user_states[user_id] = {"greeted": True}
-        await message.answer("Привет! Что тебя интересует?")
+        await message.answer("Привет!!! Что тебя интересует?")
     else:
         try:
             # Отправляем запрос к локальной модели
